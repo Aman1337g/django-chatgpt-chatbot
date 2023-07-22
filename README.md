@@ -57,6 +57,8 @@ python manage.py runserver
 
 2. Open your web browser and navigate to `http://localhost:8000/register` to create a new user account. 
 
+![registor.jpg](./images/register.png)
+
 3. You'll see the chat interface with the ChatGPT-powered chatbot ready to interact with you!
 
 4. To create a `admin` user:
