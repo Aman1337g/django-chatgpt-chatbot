@@ -57,7 +57,7 @@ python manage.py runserver
 
 2. Open your web browser and navigate to `http://localhost:8000/register` to create a new user account. 
 
-![registor.jpg](./images/register.png)
+![registor.png](./images/register.png)
 
 3. You'll see the chat interface with the ChatGPT-powered chatbot ready to interact with you!
 
@@ -80,7 +80,13 @@ Superuser created successfully.
 ```
 Congratulations! You have now created a Django admin user. You can now use this username and password to log in to the Django admin interface by accessing the `/admin/` URL .
 
+![admin.png](./images/admin.png)
+
+![admin-in.png](./images/admin-in.png)
+
 5. To `logout`, navigate to `http://localhost:8000/logout`. You will be logged out and redirected to the login page.
+
+![login.png](./images/login.png)
 
 ## Contributing
 
