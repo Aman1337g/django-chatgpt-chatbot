@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 3. Set up your OpenAI API key:
 
-   Open `views.py` in [chatbot folder](chatbot\views.py) and add openai_api_key:
+   Open `views.py` in [chatbot folder](https://github.com/Aman1337g/django-chatgpt-chatbot/blob/main/chatbot/views.py) and add openai_api_key:
 
    ```python
    openai_api_key = 'YOUR_API_KEY' # Replace YOUR_API_KEY with your openai apikey 
