@@ -1,19 +1,19 @@
-from django.shortcuts import render,redirect
-from django.http import JsonResponse
-import openai
-
 from django.contrib import auth
+from django.utils import timezone
+from django.http import JsonResponse
 from django.contrib.auth.models import User
+from django.shortcuts import render,redirect
+
+from openai import OpenAI
+
 from .models import Chat
 
-from django.utils import timezone
-
-openai_api_key = 'YOUR_API_KEY' # Replace YOUR_API_KEY with your openai apikey 
-openai.api_key = openai_api_key 
+openai_api_key = 'YOUR_API_KEY' # Replace YOUR_API_KEY with your openai apikey
+client = OpenAI(api_key=openai_api_key)
 
 def ask_openai(message):
-    response = openai.ChatCompletion.create(
-        model = "gpt-3.5-turbo-16k-0613",
+    response = client.chat.completions.create(
+        model = "gpt-3.5-turbo",
         # prompt = message,
         # max_tokens=150,
         # n=1,
